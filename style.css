@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg,#f5e42a,#119ced,#43e810,#f21688);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculator{
+    background-color: rgba(0,0,0,0.2);
+    width: 326px;
+    height: 436px;
+    border: 3px solid rgba(255,255,255,0.6);
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px white;
+}
+.output{
+    width: 100%;
+    height: 25%;
+    background-color: rgba(0,0,0,0.6);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+.prev-out{
+    background-color: transparent;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    opacity: 0.7;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.current-out{
+    background-color: transparent;
+    height: 55%;
+    border-bottom: 2px solid rgba(255,255,255,0.75);
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px;
+    font-size: 25px;
+    word-wrap: break-word;
+    word-break: break-all;
+    letter-spacing: 1px;
+}
+.btns{
+    background-color: transparent;
+    height: 323px;
+    display: grid;
+    justify-content: space-around;
+    align-content: center;
+    grid-template-columns: repeat(4,70px);
+    grid-template-rows:repeat(4,80px);
+}
+
+.btns button{
+    font-size: 25px;
+    background: none;
+    color: white;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+    outline: none;
+    margin: 5px 0px;
+    background-color: rgba(255,255,255,0.4);
+    letter-spacing: 2px;
+}
+
+.btns button:hover{
+    opacity: 1;
+    border-radius: 2px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 8px white;
+}
